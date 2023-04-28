@@ -24,7 +24,7 @@ function ProductView() {
                             <div className="preview col-md-6">
 
                                 <div className="preview-pic tab-content">
-                                    <div className="tab-pane active" id="pic-1"><img src={product.imageUrl} /></div>
+                                    <div className="tab-pane active" id="pic-1"><img src={product.imageUrl}  alt={"Img"}/></div>
                                     <div className="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
                                     <div className="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
                                     <div className="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>

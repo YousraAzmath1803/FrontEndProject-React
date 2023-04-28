@@ -10,7 +10,7 @@ function Register() {
 
     console.log("appState", appState);
 
-    if (appState.isUserLoggedIn.value != "notLoggedIn") {
+    if (appState.isUserLoggedIn.value !== "notLoggedIn") {
         appState.isUserLoggedIn.then(data => {
             console.log("data", data);
             console.log(data.value);

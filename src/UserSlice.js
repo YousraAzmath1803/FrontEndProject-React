@@ -17,7 +17,7 @@ const UserSlice = createSlice(
 
                 const response = await axios.post("http://localhost:9091/user/register", action.payload);
                 console.log("response", response.data.statusCode);
-                if (response.data.statusCode == 200) {
+                if (response.data.statusCode === 200) {
                     console.log("inside");
                     state.value = "Registered";
                     return state;
@@ -45,7 +45,7 @@ const UserSlice = createSlice(
 
                 const response = await axios.post("http://localhost:9091/user/login", action.payload);
                 console.log("response", response.data.statusCode);
-                if (response.data.statusCode == 200) {
+                if (response.data.statusCode === 200) {
                     console.log("inside");
                     state.value = "loggedIn";
                     state.role = response.data.role

@@ -7,7 +7,7 @@ function Cart() {
         alert("remove");
         let cartItems = JSON.parse(localStorage.getItem('cart'));
         cartItems.forEach((item, i) => {
-            if (item.id == productId) {
+            if (item.id === productId) {
                 cartItems.splice(i, 1);
                 alert("product removed successfully!");
                 forceUpdate();

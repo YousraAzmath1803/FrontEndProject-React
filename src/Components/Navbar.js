@@ -13,7 +13,7 @@ function Navbar() {
     var appState = useSelector(appState => appState);
     var role;
     var isLoggedIn;
-    if (appState.isUserLoggedIn.value != "notLoggedIn") {
+    if (appState.isUserLoggedIn.value !== "notLoggedIn") {
         appState.isUserLoggedIn.then(data => {
             console.log("data", data);
             if (data.value == "loggedIn") {

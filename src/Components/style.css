@@ -1,0 +1,15 @@
+*{
+	box-sizing:border-box
+}
+
+  
+.tag {
+    text-align: center;
+}
+
+
+.slick-slide img {
+	height: 450px;
+	width:auto
+	
+}

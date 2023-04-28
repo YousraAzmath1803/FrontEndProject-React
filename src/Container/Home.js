@@ -1,8 +1,13 @@
-function Home(){
-return(
-    <div>
-        <h1>Home Page</h1>
-    </div>
-)
+import images from "../Components/images";
+import ImageSlider from "../Components/ImageSlider";
+
+function Home() {
+    return (
+        <>
+
+<ImageSlider images={images}/>
+
+        </>
+    )
 }
 export default Home;
